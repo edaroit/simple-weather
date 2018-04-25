@@ -10,7 +10,7 @@ defmodule SimpleWeather.Test do
     end
   end
 
-  describe "when receive a valid location" do
+  describe "when receives a valid location" do
     test "returns temperature" do
       location = "Porto Alegre"
       temperature = SimpleWeather.temperature_of(location)
@@ -18,7 +18,7 @@ defmodule SimpleWeather.Test do
     end
   end
 
-  describe "when receive an invalid location" do
+  describe "when receives an invalid location" do
     test "returns not found" do
       invalid_location = "00000"
       result = SimpleWeather.temperature_of(invalid_location)
